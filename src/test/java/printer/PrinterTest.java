@@ -17,12 +17,10 @@ public class PrinterTest {
     }
     @Test
     public void NoOfPapersLeftAfterPrintTest(){
-
         assertEquals("pages left after print 12",printer.print(22,4));
     }
     @Test
     public void ifPrintPagesMoreThanAvailableTest(){
-
         assertEquals("not enough pages left to print", printer.print(22,5));
     }
     @Test
