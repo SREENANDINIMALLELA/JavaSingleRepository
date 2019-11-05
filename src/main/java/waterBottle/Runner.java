@@ -2,7 +2,7 @@ package waterBottle;
 
 public class Runner {
     public static void main(String[] args) {
-        WaterBottle bottle = new WaterBottle();
+        WaterBottle bottle = new WaterBottle(100);
         System.out.println("initial bottle volume "+bottle.getVolume());
 
         bottle.drink();

@@ -12,10 +12,12 @@ public class CalculatorTest {
     }
     @Test
     public void addTest(){
+
         assertEquals(44, calc.add(22,22));
     }
     @Test
     public void subtractTest(){
+
         assertEquals(28, calc.substract(50,22));
     }
     @Test

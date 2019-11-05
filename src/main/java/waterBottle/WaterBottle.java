@@ -1,8 +1,10 @@
 package waterBottle;
 
 public class WaterBottle {
-    private int volume = 100;
-    public WaterBottle(){
+    private int volume ;
+//    private boolean bottleIsEmpty=false;
+    public WaterBottle(int volume){
+        this.volume=volume;
     }
     public int getVolume(){
 
@@ -10,10 +12,12 @@ public class WaterBottle {
     }
 
     public void drink(){
+
         this.volume -= 10;
     }
     public void empty(){
         this.volume=0;
+//        this.bottleIsEmpty=true;
     }
     public void fillUp(){
         if (this.volume == 0){
